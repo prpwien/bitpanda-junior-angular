@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { BitpandaResponse } from './bitpanda-response';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +11,7 @@ export class GetdataService {
 
   constructor(public httpClient: HttpClient) {}
 
-  public sendGetRequest() {
-    return this.httpClient.get(this.API_SERVER);
+  public sendGetRequest():Observable<BitpandaResponse> {
+    return this.httpClient.get<BitpandaResponse>(this.API_SERVER);
   }
 }
