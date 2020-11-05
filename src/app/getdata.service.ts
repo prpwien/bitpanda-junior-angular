@@ -11,7 +11,7 @@ export class GetdataService {
 
   constructor(public httpClient: HttpClient) {}
 
-  public sendGetRequest():Observable<BitpandaResponse> {
+  public sendGetRequest(): Observable<BitpandaResponse> {
     return this.httpClient.get<BitpandaResponse>(this.API_SERVER);
   }
 }
