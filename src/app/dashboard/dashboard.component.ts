@@ -22,7 +22,6 @@ export class DashboardComponent implements OnInit {
       this.assets = data;
       this.cryptocoins = data.data.attributes.cryptocoins;
       this.commodities = data.data.attributes.commodities;
-      console.log(data.data.attributes.commodities);
     });
   }
 }
