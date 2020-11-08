@@ -1,27 +1,17 @@
-# BitpandaJuniorAngular
+# :chart_with_upwards_trend: Travel BitpandaJuniorAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+## :information_source: Overview
 
-## Development server
+This project was created for Bitpanda to showcase my Junior-Frontend skill set.
+It uses the Bitpanda-Masterdata-Api to get the needed data and displays it thanks to Angular and TailwindCss.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## :wrench: How To Use
 
-## Code scaffolding
+To run this project follow these steps:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. fork this project and `git clone` it
+2. open your CLI and type `npm -versuib; ng version` to make sure you have [Angular](https://angular.io) and [NPM](https://nodejs.org/) installed 
+3. `cd` into your new folder and run `npm install` to install the needed packages
+4. run `ng serve` for the development server at `localhost:4200`
+6. open your browser and go to   [`http://localhost:4200`](http://localhost:4200)
+7. Profit! :pencil:
