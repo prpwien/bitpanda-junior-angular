@@ -1,0 +1,21 @@
+<div class="mt-4">
+  <div class="flex flex-wrap -mx-6">
+    <div *ngFor="let commoditie of commodities" class="w-full my-3 px-6 xsm:py-2 sm:py-2 sm:w-1/2 xl:w-1/4">
+      <div class="flex px-5 shadow-sm rounded-md bg-white flex-row place-items-center">
+        <div class="p-3 rounded-full">
+          <img class="h-20 w-20 rounded-full"
+            src="{{ commoditie.attributes.logo }}"
+            alt="{{ commoditie.attributes.name }}">
+        </div>
+        <div class="mx-5 ">
+          <h4 class="text-2xl font-semibold text-gray-700">
+            {{ commoditie.attributes.name }}
+          </h4>
+          <div class="text-2xl text-gray-500">
+            €{{ commoditie.attributes.avg_price }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
