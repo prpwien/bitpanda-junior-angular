@@ -11,13 +11,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { CryptocoinsComponent } from './cryptocoins/cryptocoins.component';
+import { CommoditiesComponent } from './commodities/commodities.component';
+import { IndexesComponent } from './indexes/indexes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CryptocoinsComponent,
+    CommoditiesComponent,
+    IndexesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,107 +1,16 @@
-<div>
-  <div class="flex h-screen bg-gray-200">
-      <div class="flex-1 flex flex-col overflow-hidden">
-          <app-header [fiats] = "fiats"></app-header>
-          <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
-              <div class="container mx-auto px-6 py-8">
-
-                  <div class="mt-4">
-                      <div class="flex flex-wrap -mx-6">
-                          <div *ngFor="let commoditie of commodities" class="w-full my-3 px-6 xsm:py-2 sm:py-2 sm:w-1/2 xl:w-1/4">
-                                <div class="flex px-5 shadow-sm rounded-md bg-white flex-row place-items-center place-content-center ">
-                                    <div class="p-3 rounded-full">
-                                      <img class="h-20 w-20 rounded-full"
-                                        src="{{ commoditie.attributes.logo }}"
-                                        alt="{{ commoditie.attributes.name }}">
-                                    </div>
-                                    <div class="mx-5 ">
-                                        <h4 class="text-2xl font-semibold text-gray-700">{{ commoditie.attributes.name }}</h4>
-                                        <div class="text-2xl text-gray-500">€{{ commoditie.attributes.avg_price }}</div>
-                                    </div>
-                                </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="mt-4">
-                    <div class="flex flex-wrap -mx-6">
-                        <div *ngFor="let index of indexes" class="w-full my-3 px-6 xsm:py-2 sm:py-2 sm:w-1/3 xl:w-1/3">
-                              <div class="flex justify-intems-center px-5 shadow-sm rounded-md bg-white place-items-center place-content-center">
-                                  <div class="p-3 rounded-full">
-                                    <img class="h-20 w-20 rounded-full"
-                                      src="{{ index.attributes.logo }}"
-                                      alt="{{ index.attributes.symbol }}">
-                                  </div>
-                                  <div class="mx-5">
-                                      <h4 class="text-xl font-semibold text-gray-700">{{ index.attributes.symbol }}</h4>
-                                      <div class="text-xl text-gray-500">${{ index.attributes.avg_price }}</div>
-                                  </div>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-
-                  <div class="flex flex-col mt-8">
-                      <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
-                          <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200 bg-white">
-                              <table class="min-w-full">
-                                  <thead>
-                                      <tr>
-                                        <th
-                                          class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                                          Logo</th>
-                                         <th
-                                          class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                                          Symbol</th>
-                                        <th
-                                          class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                                          Name</th>
-                                        <th
-                                          class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                                          Average Price</th>
-                                        <th
-                                          class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                                          Circulating Supply</th>
-                                        <th class="px-6 py-3 border-b border-gray-200 bg-gray-50"></th>
-                                      </tr>
-                                  </thead>
-
-                                  <tbody class="bg-white">
-                                      <tr *ngFor="let cryptocoin of cryptocoins">
-                                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                          <div class="flex-shrink-0 h-10 w-10">
-                                            <img class="h-10 w-10 rounded-full"
-                                                src="{{ cryptocoin.attributes.logo }}"
-                                                alt="{{ cryptocoin.attributes.name }}">
-                                         </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                          <div class="text-sm leading-5 text-gray-900">{{ cryptocoin.attributes.symbol }}</div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                          <div class="text-sm leading-5 font-medium text-gray-900">
-                                            {{ cryptocoin.attributes.name }}
-                                          </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                            <div class="text-sm leading-5 text-gray-900">€ {{ cryptocoin.attributes.avg_price }}</div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                            <div class="text-sm leading-5 text-gray-900">{{ cryptocoin.attributes.circulating_supply }}</div>
-                                        </td>
-                                        <td
-                                            class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
-                                            <a href="https://bitpanda.com" class="text-indigo-600 hover:text-indigo-900">Trade</a>
-                                        </td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                          </div>
-                      </div>
-                  </div>
-
-                  <app-footer></app-footer>
-              </div>
-          </main>
-      </div>
+<div class="flex h-screen bg-gray-200">
+  <div class="flex-1 flex flex-col overflow-hidden">
+    <app-header [fiats] = "fiats"></app-header>
+      <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
+        <div class="container mx-auto px-6 py-8">
+          <!-- COMMODITIES -->
+          <app-commodities [commodities] = "commodities"></app-commodities>
+          <!-- INDEXES -->
+          <app-indexes [indexes] = "indexes"></app-indexes>
+          <!-- COINS TABLE -->
+          <app-cryptocoins [cryptocoins] = "cryptocoins"></app-cryptocoins>
+        </div>
+      <app-footer></app-footer>
+    </main>
   </div>
 </div>
