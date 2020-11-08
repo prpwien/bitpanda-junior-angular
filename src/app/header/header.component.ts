@@ -1,5 +1,4 @@
 import { Component, OnInit, Input} from '@angular/core';
-import { FiatsResponse } from '../bitpanda-response';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +7,7 @@ import { FiatsResponse } from '../bitpanda-response';
 })
 export class HeaderComponent implements OnInit {
 
+  // get array from parent component
   @Input() fiats: [];
 
   constructor() { }
