@@ -3,7 +3,6 @@
 ## :information_source: Overview
 
 This project was created for Bitpanda to showcase my Junior-Frontend skill set.
-
 It uses the Bitpanda-Masterdata-Api to get the needed data and displays it thanks to Angular and TailwindCss.
 
 ## :wrench: How To Use
