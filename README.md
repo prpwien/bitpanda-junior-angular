@@ -1,4 +1,4 @@
-# :chart_with_upwards_trend: Travel BitpandaJuniorAngular
+# :chart_with_upwards_trend: BitpandaJuniorAngular
 
 ## :information_source: Overview
 
