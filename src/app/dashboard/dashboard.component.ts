@@ -10,7 +10,6 @@ import { BitpandaResponse, CommoditiesResponse, CryptocoinsResponse, FiatsRespon
 })
 
 export class DashboardComponent implements OnInit {
-  assets: BitpandaResponse;
   cryptocoins: CryptocoinsResponse[] = [];
   commodities: CommoditiesResponse[] = [];
   fiats: FiatsResponse[] = [];
@@ -20,8 +19,6 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.getdataService.sendGetRequest().subscribe((data: BitpandaResponse) => {
-      console.log(data);
-      this.assets = data;
       this.cryptocoins = data.data.attributes.cryptocoins;
       this.commodities = data.data.attributes.commodities;
       this.fiats = data.data.attributes.fiats;
